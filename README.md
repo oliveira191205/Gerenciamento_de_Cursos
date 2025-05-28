@@ -90,11 +90,8 @@ As opções são as seguintes:
 
 							 Como executar o programa
 
-	1. Clone este repositório:
-	   git clone https://github.com/oliveira191205/Gerenciamento_de_Cursos.git
-	
-	2. Entre na pasta:
-	   cd Gerenciamento_de_Cursos
-	   
-	4.  Execute o programa:
-	   py cadastro_cursos.py ou python cadastro_cursos.py 
+	1. Certifique-se  que tenha o Python instalado em seu PC.
+ 	2. Abra o terminal e execute git clone https://github.com/oliveira191205/Gerenciamento_de_Cursos.git
+  	3. Entre na pasta com o comando cd Gerenciamento_de_Cursos
+   	4. Instale as dependências com o comando: pip install -r requirements.txt
+    	5. Execute o programa com py cadastro_curso.py ou python cadastro_curso.py
