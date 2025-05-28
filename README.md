@@ -97,4 +97,4 @@ As opções são as seguintes:
 	   cd Gerenciamento_de_Cursos
 	   
 	4.  Execute o programa:
-	   python main.py
+	   py cadastro_cursos.py ou python cadastro_cursos.py 
