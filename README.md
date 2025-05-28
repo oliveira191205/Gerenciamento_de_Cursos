@@ -1,4 +1,4 @@
-						Sistema de Gerenciamento de Cursos
+						## Sistema de Gerenciamento de Cursos
 O sistema desenvolvido é um programa de cadastro simples que permite registrar informações de cursos, professores e alunos. Além disso, o sistema conta com uma funcionalidade extra que exibe as últimas ações realizadas, funcionando como um pequeno histórico. O funcionamento do programa é baseado em um menu interativo, onde o usuário escolhe as opções através da digitação de números. O menu é exibido continuamente até que o usuário opte por sair do sistema.
 Cadastro de Cursos
 Na função cadastrar_curso (), o sistema solicita ao usuário:
