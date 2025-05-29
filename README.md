@@ -5,16 +5,18 @@ O sistema de Gerenciamento de cursos é um programa de cadastro simples, desenvo
 O objetivo deste sistema é proporcionar uma maneira simples e eficaz de cadastrar e gerenciar dados acadêmicos básicos, sendo especialmente útil para quem está aprendendo lógica de programação, manipulação de listas e tuplas, e estruturas de controle em Python.
 
 ## Menu
-O sistema apresenta um menu de opções em um laço `while True`, que oferece ao usuário diferentes operações, que serão escolhidas por meio da digitação do numero referênte a cada opção apresnetada no menu, este menu é exibido continuamente até que o usuário opte por encerrar as operações. As operações se tratam de:
-* Cadastrar Cursos
-* Cadastrar professores
-* Cadastrar cursos
-* Listar todos
-* Mudar de curso
-* Cancelar matrícula
-* Ver turmas
-* Mostrar ações
-* Sair do sistema
+O sistema apresenta um menu de opções em um laço `while True`, que oferece ao usuário diferentes operações, que serão escolhidas por meio da digitação do numero referente a cada opção apresnetada no menu, este menu é exibido continuamente até que o usuário opte por encerrar as operações. As operações se tratam de:
+1. Cadastrar Cursos
+2. Cadastrar professores
+3. Cadastrar cursos
+4. Listar todos
+5. Mudar de curso
+6. Cancelar matrícula
+7. Ver turmas
+8. Mostrar ações
+9. Sair do sistema
+
+As escolhas do usuário são tratadas com estruturas `if`, `elif`, e `else`, que direcionam a execução para a função correspondente.
   
 ## Cadastro de Cursos
 
