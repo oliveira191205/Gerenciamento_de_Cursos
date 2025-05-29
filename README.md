@@ -1,5 +1,8 @@
 						 Sistema de Gerenciamento de Cursos
-O sistema desenvolvido é um programa de cadastro simples que permite registrar informações de cursos, professores e alunos. Além disso, o sistema conta com uma funcionalidade extra que exibe as últimas ações realizadas, funcionando como um pequeno histórico. O funcionamento do programa é baseado em um menu interativo, onde o usuário escolhe as opções através da digitação de números. O menu é exibido continuamente até que o usuário opte por sair do sistema.
+       
+O sistema desenvolvido é um programa de cadastro simples que permite registrar informações de cursos, professores e alunos. Além disso, o sistema conta com uma funcionalidade extra que exibe as últimas ações realizadas, funcionando como um pequeno histórico que simula o comportamento de uma pilha (último a entrar, primeiro a sair).
+O objetivo deste sistema é oferecer uma maneira prática e eficiente de cadastrar e visualizar dados acadêmicos básicos, sendo ideal para estudos de lógica de programação, manipulação de listas, tuplas e estrutura de menus em Python.
+O funcionamento do programa é baseado em um menu interativo, onde o usuário escolhe as opções através da digitação de números. O menu é exibido continuamente até que o usuário opte por sair do sistema.
 Cadastro de Cursos
 Na função cadastrar_curso (), o sistema solicita ao usuário:
 
