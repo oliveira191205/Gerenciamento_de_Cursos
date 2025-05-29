@@ -93,14 +93,13 @@ Todo o sistema funciona dentro de um loop `while True`, garantindo que o menu co
 while True:
     print("1 - Cadastrar curso")
     print("2 - Cadastrar professor")
-    ...
+
     opcao = input("Escolha uma opção: ")
 
     if opcao == "1":
         cadastrar_curso()
     elif opcao == "2":
         cadastrar_professor()
-    ...
     elif opcao == "0":
         break
 ```
