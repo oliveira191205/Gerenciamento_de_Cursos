@@ -17,6 +17,7 @@ Esses dois dados são agrupados em uma tupla (nome, curso) e adicionados à list
 	•  A tupla foi usada para armazenar os dados fixos de cada professor.
  
 	•  A lista professores serve para manter todos os registros em ordem de cadastro.
+ 
 							Cadastro de Alunos
 Na função cadastrar_aluno (), o sistema solicita:
 
