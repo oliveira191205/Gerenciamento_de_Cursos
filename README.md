@@ -14,6 +14,7 @@ Na função cadastrar_professor (), o usuário informa:
 	•	 Nome do professor
 	•	 Curso que ele leciona
 Esses dois dados são agrupados em uma tupla (nome, curso) e adicionados à lista professores. Assim como nos cursos, a ação é registrada na lista acoes.
+
 	•  A tupla foi usada para armazenar os dados fixos de cada professor.
  
 	•  A lista professores serve para manter todos os registros em ordem de cadastro.
