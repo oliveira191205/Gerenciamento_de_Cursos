@@ -92,8 +92,24 @@ As opções são as seguintes:
 
 							 Como executar o programa
 
+
+ 	Instalando Python:
+
 	1. Certifique-se  que tenha o Python instalado em seu PC.
- 	2. Abra o terminal e execute git clone https://github.com/oliveira191205/Gerenciamento_de_Cursos.git
-  	3. Entre na pasta com o comando cd Gerenciamento_de_Cursos
-   	4. Instale as dependências com o comando: pip install -r requirements.txt
-    	5. Execute o programa com py cadastro_curso.py ou python cadastro_curso.py
+ 	2. Se não tiver acesse https://www.python.org/downloads/
+  	3.Baixe e instale a versão mais recente do Python 3.
+ 	4. Durante a instalação, marque a opção "Add Python to PATH".
+  	5. Para testar se está funcionando, abra o terminal (Prompt de Comando) e digite: py --version
+
+   	Instalando Git:
+  	6. Acesse: https://git-scm.com/downloads
+  	7. Baixe e instale o Git para o seu sistema (Windows, Linux ou macOS).
+  	8. Após a instalação, abra o terminal e teste com:
+   	9. git --version
+  
+        Clonando o repositório e executando o projeto
+    	10. Abra o terminal e execute: git clone https://github.com/oliveira191205/Gerenciamento_de_Cursos.git
+     	11. Acesse a pasta do arquivo com: cd Gerenciamento_de_Cursos
+      	12. Instale as dependências do projeto com pip install -r requirements.txt
+       	13. Execute o projeto com py cadastro_cursos.py ou python cadastro_cursos.py
+
