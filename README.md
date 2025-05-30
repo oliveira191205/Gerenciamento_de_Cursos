@@ -315,7 +315,7 @@ As opções disponíveis são:
    ```
     LARISSA VITORIA CUSTODIO DE CARVALHO - RA: 1995354
     MARCELA BUZZO DE OLIVEIRA - RA: 2014340
-    VINICIUS MIGUEL DE OLIVEIRA GARCIA - RA:
+    VINICIUS MIGUEL DE OLIVEIRA GARCIA - RA: 2002638
 
     Análise e Desenvolvimento de Sistemas - 3ºC
     ```
