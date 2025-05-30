@@ -311,3 +311,14 @@ As opções disponíveis são:
     ```
 
 
+   ### Trabalho desenvolvido por
+   ```
+    LARISSA VITORIA CUSTODIO DE CARVALHO - RA: 1995354
+    MARCELA BUZZO DE OLIVEIRA - RA: 2014340
+    VINICIUS MIGUEL DE OLIVEIRA GARCIA - RA:
+
+    Análise e Desenvolvimento de Sistemas - 3ºC
+    ```
+    
+
+
