@@ -12,13 +12,50 @@ turmas = {
 }
 
 #Cadastro 
+cursos_validos = [
+    "ADMINISTRAÇÃO",
+    "AGROECOLOGIA",
+    "ANÁLISE E DESENVOLVIMENTO DE SISTEMAS",
+    "ARQUITETURA E URBANISMO",
+    "BIOMEDICINA",
+    "CIÊNCIA DA COMPUTAÇÃO",
+    "CIÊNCIAS CONTÁBEIS",
+    "DIREITO",
+    "EDUCAÇÃO FÍSICA",
+    "ENGENHARIA CIVIL",
+    "ENGENHARIA DA COMPUTAÇÃO",
+    "ENGENHARIA DE PRODUÇÃO",
+    "ENGENHARIA ELÉTRICA",
+    "ESTÉTICA E COSMÉTICA",
+    "FARMÁCIA",
+    "FISIOTERAPIA",
+    "FONOAUDIOLOGIA",
+    "HISTÓRIA",
+    "LETRAS - PORTUGUÊS E INGLÊS",
+    "LOGÍSTICA",
+    "MEDICINA",
+    "MEDICINA VETERINÁRIA",
+    "NUTRIÇÃO",
+    "ODONTOLOGIA",
+    "PEDAGOGIA",
+    "PSICOLOGIA",
+    "SERVIÇO SOCIAL",
+    "SISTEMAS DE INFORMAÇÃO",
+]
+
+cursos = {}
+acoes = []
+
 def cadastrar_curso():
     nome = input("Nome do curso: ").upper()
+    if nome not in cursos_validos:
+        print("Curso não reconhecido. Não é possível cadastrar.")
+        return
     carga = input("Carga horária (em horas): ")
-    cursos.append((nome, carga))
-    acoes.append(f"Curso cadastrado: {nome}")
+    cursos[nome] = carga
+    acoes.append(("Curso cadastrado", nome))
     print("Curso cadastrado com sucesso!")
-
+    
 def cadastrar_professor():
     nome = input("Nome do professor: ")
     curso = input("Curso que o professor dá aula: ").upper()
@@ -26,14 +63,34 @@ def cadastrar_professor():
     acoes.append(f"Professor cadastrado: {nome}")
     print("Professor cadastrado com sucesso!")
 
-def cadastrar_aluno():
-    nome = input("Nome do aluno: ")
-    idade = input("Idade: ")
-    curso = input("Curso: ").upper()
-    alunos.append((nome, idade, curso))
-    acoes.append(f"Aluno cadastrado: {nome}")
-    print("Aluno cadastrado com sucesso!") 
+alunos = []
+acoes = []
 
+def gerar_id_aluno():
+    return len(alunos) + 1
+
+def cadastrar_aluno():
+    nome = input("Nome do aluno: ")  
+    idade = input("Idade: ")
+    curso = input("Curso: ")
+
+    for aluno in alunos:
+        if nome == aluno["nome"] and curso == aluno["curso"]:
+            print(f"Erro: O aluno '{nome}' já está cadastrado no curso '{curso}'.")
+            return
+
+    id_aluno = gerar_id_aluno()
+    aluno = {
+        "id": id_aluno,
+        "nome": nome,
+        "idade": idade,
+        "curso": curso
+    }
+
+    alunos.append(aluno)
+    acoes.append(f"Aluno cadastrado: {nome} (ID: {id_aluno})")
+    print(f"Aluno cadastrado com sucesso! ID gerado: {id_aluno}")
+    
 #Visualização
 def mostrar_acoes():
     print("\nÚltimas ações realizadas:")
