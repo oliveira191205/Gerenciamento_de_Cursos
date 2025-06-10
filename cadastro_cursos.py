@@ -143,13 +143,16 @@ def mudar_de_curso():
     nome_aluno = input("Nome do aluno: ")
     novo_curso = input("Novo curso: ").upper()
 
-    for i, (nome, idade, curso_atual) in enumerate(alunos):
-        if nome == nome_aluno:
-            alunos[i] = (nome, idade, novo_curso)
+    for i, aluno in enumerate(alunos):
+        if aluno["nome"] == nome_aluno:
+            curso_atual = aluno["curso"]
+            idade = aluno["idade"]
+
+            alunos[i]["curso"] = novo_curso
 
             if curso_atual in turmas:
                 turmas[curso_atual]["alunos_na_turma"] = [
-                    (n, idd) for n, idd in turmas[curso_atual]["alunos_na_turma"] if n != nome
+                    (n, idd) for n, idd in turmas[curso_atual]["alunos_na_turma"] if n != nome_aluno
                 ]
 
             if novo_curso not in turmas:
@@ -158,31 +161,33 @@ def mudar_de_curso():
                     "alunos_na_turma": []
                 }
 
-            turmas[novo_curso]["alunos_na_turma"].append((nome, idade))
-
-            acoes.append(f"Aluno {nome} mudou de curso: {curso_atual} -> {novo_curso}")
-            print(f"{nome} foi transferido para o curso {novo_curso}.")
+            turmas[novo_curso]["alunos_na_turma"].append((nome_aluno, idade))
+            acoes.append(f"Aluno {nome_aluno} mudou de curso: {curso_atual} -> {novo_curso}")
+            print(f"{nome_aluno} foi transferido para o curso {novo_curso}.")
             return
 
     print("Aluno não encontrado.")
+
 
 def cancelar_matricula():
     nome_aluno = input("Nome do aluno a ser desmatriculado: ")
 
-    for i, (nome, idade, curso) in enumerate(alunos):
-        if nome == nome_aluno:
+    for i, aluno in enumerate(alunos):
+        if aluno["nome"] == nome_aluno:
+            curso = aluno["curso"]
             alunos.pop(i)
 
             if curso in turmas:
                 turmas[curso]["alunos_na_turma"] = [
-                    (n, idd) for n, idd in turmas[curso]["alunos_na_turma"] if n != nome
+                    (n, idd) for n, idd in turmas[curso]["alunos_na_turma"] if n != nome_aluno
                 ]
 
-            acoes.append(f"Aluno desmatriculado: {nome}")
-            print(f"Aluno {nome} foi desmatriculado com sucesso.")
+            acoes.append(f"Aluno desmatriculado: {nome_aluno}")
+            print(f"Aluno {nome_aluno} foi desmatriculado com sucesso.")
             return
 
     print("Aluno não encontrado.")
+
 
 #Menu 
 def menu():
